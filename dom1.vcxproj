@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{988B02B9-A5E1-451A-A3B8-8CAF2CDBA6F1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>dom1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aliases.cpp" />
+    <ClCompile Include="batch_command_builder.cpp" />
+    <ClCompile Include="commands.cpp" />
+    <ClCompile Include="comm_assign.cpp" />
+    <ClCompile Include="comm_batch.cpp" />
+    <ClCompile Include="comm_cd.cpp" />
+    <ClCompile Include="comm_compare.cpp" />
+    <ClCompile Include="comm_copy.cpp" />
+    <ClCompile Include="comm_delete.cpp" />
+    <ClCompile Include="comm_dir.cpp" />
+    <ClCompile Include="comm_help.cpp" />
+    <ClCompile Include="comm_info.cpp" />
+    <ClCompile Include="comm_makedir.cpp" />
+    <ClCompile Include="comm_move.cpp" />
+    <ClCompile Include="comm_new.cpp" />
+    <ClCompile Include="comm_quit.cpp" />
+    <ClCompile Include="comm_select.cpp" />
+    <ClCompile Include="comm_setts.cpp" />
+    <ClCompile Include="comm_sudo.cpp" />
+    <ClCompile Include="compare_predicate_name.cpp" />
+    <ClCompile Include="compare_predicate_size.cpp" />
+    <ClCompile Include="compare_predicate_time.cpp" />
+    <ClCompile Include="cropper.cpp" />
+    <ClCompile Include="cropper_compare.cpp" />
+    <ClCompile Include="file.cpp" />
+    <ClCompile Include="selection.cpp" />
+    <ClCompile Include="selections.cpp" />
+    <ClCompile Include="selection_custom_predicate.cpp" />
+    <ClCompile Include="selection_custom_predicate_builder.cpp" />
+    <ClCompile Include="selection_LogicalOp_and.cpp" />
+    <ClCompile Include="selection_LogicalOp_not.cpp" />
+    <ClCompile Include="selection_LogicalOp_or.cpp" />
+    <ClCompile Include="selection_LogicalOp_xor.cpp" />
+    <ClCompile Include="selection_predicate_name.cpp" />
+    <ClCompile Include="selection_predicate_size.cpp" />
+    <ClCompile Include="selection_predicate_time.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="command.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aliases.h" />
+    <ClInclude Include="batch_command_builder.h" />
+    <ClInclude Include="commands.h" />
+    <ClInclude Include="commands_father.h" />
+    <ClInclude Include="comm_assign.h" />
+    <ClInclude Include="comm_batch.h" />
+    <ClInclude Include="comm_cd.h" />
+    <ClInclude Include="comm_compare.h" />
+    <ClInclude Include="comm_copy.h" />
+    <ClInclude Include="comm_delete.h" />
+    <ClInclude Include="comm_dir.h" />
+    <ClInclude Include="comm_help.h" />
+    <ClInclude Include="comm_info.h" />
+    <ClInclude Include="comm_makedir.h" />
+    <ClInclude Include="comm_move.h" />
+    <ClInclude Include="comm_new.h" />
+    <ClInclude Include="comm_quit.h" />
+    <ClInclude Include="comm_select.h" />
+    <ClInclude Include="comm_setts.h" />
+    <ClInclude Include="comm_sudo.h" />
+    <ClInclude Include="compare_predicate_name.h" />
+    <ClInclude Include="compare_predicate_size.h" />
+    <ClInclude Include="compare_predicate_time.h" />
+    <ClInclude Include="cropper.h" />
+    <ClInclude Include="cropper_compare.h" />
+    <ClInclude Include="dirent.h" />
+    <ClInclude Include="errors.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="command.h" />
+    <ClInclude Include="selection.h" />
+    <ClInclude Include="selections.h" />
+    <ClInclude Include="selection_composite.h" />
+    <ClInclude Include="selection_custom_predicate_builder.h" />
+    <ClInclude Include="selection_LogicalOp.h" />
+    <ClInclude Include="selection_LogicalOp_and.h" />
+    <ClInclude Include="selection_LogicalOp_not.h" />
+    <ClInclude Include="selection_LogicalOp_or.h" />
+    <ClInclude Include="selection_LogicalOp_xor.h" />
+    <ClInclude Include="selection_predicate.h" />
+    <ClInclude Include="selection_predicate_name.h" />
+    <ClInclude Include="selection_predicate_size.h" />
+    <ClInclude Include="selection_predicate_time.h" />
+    <ClInclude Include="selection_custom_predicate.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
