@@ -40,7 +40,7 @@
 	* time="DD.MM.YYYY.-HH:MM:SS"
 	* time="spec_arg" #spec_arg is made from one number and one char (H-hour, D-day, M-Month, Y-year)
 * Expression in compare:
-        * AND(arg1,arg2)
+	* AND(arg1,arg2)
 	* OR(arg1,arg2)
 	* XOR(arg1,arg2)
 	* NOT(arg)
